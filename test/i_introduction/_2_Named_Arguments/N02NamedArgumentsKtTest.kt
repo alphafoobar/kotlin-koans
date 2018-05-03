@@ -1,11 +1,12 @@
 package i_introduction._2_Named_Arguments
 
-import org.junit.Assert.assertEquals
+import i_introduction._1_Java_To_Kotlin_Converter.task1
+import org.hamcrest.CoreMatchers.equalTo
+import org.junit.Assert.assertThat
 
 class N02NamedArgumentsKtTest {
 
     @org.junit.Test fun testJoinToString() {
-        assertEquals("{1, 2, 3, 42, 555}", task2(listOf(1, 2, 3, 42, 555)))
+        assertThat(task1(listOf(1, 2, 3, 42, 555)), equalTo("{1, 2, 3, 42, 555}"))
     }
-
 }
